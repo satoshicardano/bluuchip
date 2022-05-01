@@ -1,0 +1,49 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    background: url("../assets/hero-bg.png");
+    display: flex;
+    justify-content: center;
+    // padding-top: 20px;
+    .inner_con{
+        width: 90%;
+        .hero_text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            // border: 1px solid green;
+            margin-top: 50px;
+            h1{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 90px;
+                line-height: 0px;
+                text-align: center;
+                letter-spacing: -0.06em;
+                color: #95F244;
+            }
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+                text-align: center;
+                color: #FFFFFF;
+                width: 520px;
+            }
+        }
+    }
+}
+
+@media (max-width: 919px) {
+    .container{
+        // height: unset !important;
+        h1{
+            font-size: 60px !important;
+        }
+        p{
+            width: unset !important;
+        }
+    }
+}
